@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+    background: #fbfaf6;
+    color: #17140e;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    background:
+      radial-gradient(circle at 10% 0%, rgba(201, 242, 77, 0.18), transparent 28rem),
+      linear-gradient(180deg, #fbfaf6 0%, #f7f4ec 100%);
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-[1220px] px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full px-3.5 py-2 text-[13px] font-bold leading-none;
+  }
+
+  .btn {
+    @apply inline-flex min-h-12 items-center justify-center rounded-full px-6 text-sm font-bold transition duration-200 sm:text-base;
+  }
+
+  .btn-primary {
+    @apply bg-ink text-white shadow-glow hover:-translate-y-0.5 hover:bg-black;
+  }
+
+  .btn-secondary {
+    @apply border border-ink/10 bg-white/80 text-ink hover:-translate-y-0.5 hover:border-ink/20;
+  }
+
+  .section-title {
+    @apply font-display text-4xl font-extrabold leading-[1.06] tracking-normal text-ink sm:text-5xl;
+  }
+
+  .card {
+    @apply rounded-lg border border-ink/10 p-6 shadow-[0_18px_60px_rgba(23,20,14,0.06)] sm:p-7;
+  }
+
+  .icon-tile {
+    @apply flex size-12 items-center justify-center rounded-md font-display text-xl font-extrabold;
+  }
+
+  .feature-card {
+    @apply rounded-lg border border-white/10 bg-[#211D15] p-6 sm:p-7;
+  }
+}
