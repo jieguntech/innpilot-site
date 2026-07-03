@@ -1,1 +1,29 @@
-This project is about the landing page for the website: https://www.innpilot.ai which is a static site hosted in Cloudflare
+This project is the landing page for https://www.innpilot.ai.
+
+It is built with Astro, TypeScript, and Tailwind CSS, then deployed as a static
+Cloudflare Worker asset bundle.
+
+## Commands
+
+```sh
+pnpm install
+pnpm dev
+pnpm build
+pnpm deploy
+```
+
+`pnpm build` runs `astro check` before generating the static site into `dist/`.
+`pnpm deploy` builds the site and publishes `dist/` using Wrangler.
+
+## GitHub Actions Deployment
+
+The workflow in `.github/workflows/deploy.yml` runs on pull requests to `main`,
+pushes to `main`, and manual dispatches. Pull requests build the site. Pushes to
+`main` and manual dispatches build the site, then deploy it to Cloudflare
+Workers with Wrangler.
+
+Add these repository secrets in GitHub before deploying:
+
+- `CLOUDFLARE_ACCOUNT_ID`: the Cloudflare account that owns the Worker.
+- `CLOUDFLARE_API_TOKEN`: an API token with permission to edit Cloudflare
+  Workers for that account.
