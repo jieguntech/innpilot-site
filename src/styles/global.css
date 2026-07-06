@@ -13,6 +13,7 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: "Oswald", sans-serif;
   }
 
   html {
@@ -23,9 +24,13 @@
     margin: 0;
     min-width: 320px;
     background:
-      radial-gradient(circle at 10% 0%, rgba(201, 242, 77, 0.18), transparent 28rem),
+      radial-gradient(
+        circle at 10% 0%,
+        rgba(201, 242, 77, 0.18),
+        transparent 28rem
+      ),
       linear-gradient(180deg, #fbfaf6 0%, #f7f4ec 100%);
-    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+    font-family: "Oswald", sans-serif;
   }
 
   a {

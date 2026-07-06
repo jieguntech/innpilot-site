@@ -1,7 +1,7 @@
 ---
 import "../styles/global.css";
 
-const navItems = ["Platform", "Front Desk", "Payments", "Pricing"];
+const navItems = ["Platform", "Front Desk", "Pricing"];
 const trustedBy = ["Harbourview", "The Dunes", "Marlowe Inn", "Cedar & Pine", "Soleil Suites"];
 
 const automationCards = [
@@ -93,8 +93,7 @@ const rooms = [
   </head>
   <body>
     <header class="container-page flex items-center justify-between py-5">
-      <a href="/" class="flex items-center gap-2 font-display text-xl font-extrabold" aria-label="InnPilot home">
-        <span class="flex size-9 items-center justify-center rounded-lg bg-violet text-sm font-extrabold text-white">IP</span>
+      <a href="/" class="flex font-sans items-center gap-2 font-display text-3xl font-extrabold" aria-label="InnPilot home">
         InnPilot
       </a>
 
@@ -103,8 +102,7 @@ const rooms = [
       </nav>
 
       <div class="flex items-center gap-3">
-        <a href="#login" class="hidden text-sm font-bold text-muted hover:text-ink sm:inline-flex">Log in</a>
-        <a href="#demo" class="btn btn-primary">Book a demo</a>
+        <a href="mailto:support@innpilot.ai" class="btn btn-primary">Book a demo</a>
       </div>
     </header>
 
@@ -116,7 +114,7 @@ const rooms = [
             Let AI run the busywork of your property.
           </h1>
           <p class="mt-7 max-w-xl text-lg leading-8 text-[#514C42] sm:text-xl">
-            InnPilot is the AI-powered, all-in-one platform for self check-in, AI customer service, an AI phone assistant and booking management, automating repetitive work so your team can focus on guests.
+            <span class="font-extrabold" >InnPilot</span> is the AI-powered, all-in-one platform for self check-in, AI customer service, an AI phone assistant and booking management, automating repetitive work so your team can focus on guests.
           </p>
 
           <div class="mt-9 flex flex-wrap items-center gap-4">
@@ -125,11 +123,6 @@ const rooms = [
               <span class="flex size-8 items-center justify-center rounded-full bg-ink text-[10px] text-white" aria-hidden="true">▶</span>
               Watch tour
             </a>
-          </div>
-
-          <div class="mt-8 flex flex-wrap items-center gap-x-7 gap-y-3 text-sm font-semibold text-muted">
-            <span class="font-display text-base font-extrabold text-ink">4.9 on Capterra</span>
-            <span>No card required</span>
           </div>
         </div>
 
@@ -180,12 +173,14 @@ const rooms = [
         </div>
       </section>
 
+      <!--
       <section class="container-page pb-16">
         <p class="text-center text-xs font-bold uppercase text-[#9A958A]">Trusted by 1,200+ independent properties</p>
         <div class="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4 opacity-70">
           {trustedBy.map((name) => <span class="font-display text-xl font-extrabold">{name}</span>)}
         </div>
       </section>
+      -->
 
       <section id="platform" class="container-page py-14">
         <div class="mx-auto max-w-3xl text-center">
@@ -280,8 +275,7 @@ const rooms = [
               Start a free 14-day trial. No card, no lock-in, and a real person to help you set up.
             </p>
             <div class="mt-8 flex flex-wrap justify-center gap-4">
-              <a id="trial" href="mailto:hello@innpilot.ai" class="btn bg-white px-7 text-ink hover:-translate-y-0.5">Start free trial</a>
-              <a id="demo" href="mailto:sales@innpilot.ai" class="btn border border-white/30 bg-white/15 px-7 text-white hover:-translate-y-0.5 hover:bg-white/20">Talk to sales</a>
+              <a id="trial" href="mailto:support@innpilot.ai" class="btn bg-white px-7 text-ink hover:-translate-y-0.5">Start free trial</a>
             </div>
           </div>
         </div>
@@ -290,17 +284,15 @@ const rooms = [
 
     <footer class="border-t border-ink/10">
       <div class="container-page flex flex-wrap items-center justify-between gap-5 py-8">
-        <a href="/" class="flex items-center gap-2 font-display text-lg font-extrabold">
-          <span class="flex size-7 items-center justify-center rounded-md bg-violet text-xs text-white">IP</span>
+        <a href="/" class="flex font-sans items-center gap-2 font-display text-lg font-extrabold">
           InnPilot
         </a>
         <nav class="flex flex-wrap gap-6 text-sm font-semibold text-muted" aria-label="Footer navigation">
           <a href="#platform">Platform</a>
           <a href="#pricing">Pricing</a>
-          <a href="mailto:help@innpilot.ai">Help centre</a>
-          <a href="mailto:hello@innpilot.ai">Contact</a>
+          <a href="mailto:support@innpilot.ai">Contact</a>
         </nav>
-        <p class="text-sm text-[#9A958A]">© 2026 InnPilot. All rights reserved.</p>
+        <p class="text-sm text-[#9A958A]">© 2026 JIE GUN TECH All rights reserved.</p>
       </div>
     </footer>
   </body>
