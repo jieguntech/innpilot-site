@@ -1,0 +1,35 @@
+name: "Feature ⭐"
+description: A new feature or planned piece of work
+labels: ["feature"]
+body:
+  - type: textarea
+    id: body
+    attributes:
+      label: Feature / Planned Work Details
+      value: |
+        ## Overview
+        <!-- A clear summary of the feature and its purpose. -->
+
+
+        ## Implementation
+        <!-- Describe the proposed implementation approach. -->
+
+
+        ## References
+        <!-- Links to related issues, designs, docs, or external resources. -->
+
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define the acceptance criteria using Given/When/Then format.
+      value: |
+        | Given | When | Then |
+        |-------|------|------|
+        |       |      |      |
+        |       |      |      |
+    validations:
+      required: false

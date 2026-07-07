@@ -1,0 +1,27 @@
+name: "Bug 🐞"
+description: A ticket for a bug or unexpected behaviour
+labels: ["bug"]
+body:
+  - type: textarea
+    id: body
+    attributes:
+      label: Bug Details
+      description: Complete each section below.
+      value: |
+        ## Overview
+        <!-- A clear summary of the bug and its impact. -->
+
+
+        ## Steps to Reproduce
+        <!-- Step-by-step instructions to reproduce the issue. -->
+
+
+        ## Actual Result
+        <!-- What actually happened? -->
+
+
+        ## Expected Result
+        <!-- What should have happened? -->
+
+    validations:
+      required: true

@@ -1,0 +1,32 @@
+name: "Epic 🏗️"
+description: A large feature or project that will be split into smaller tickets
+labels: ["epic"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        > ⚠️ After creating this epic, remember to set it as the parent on any related features!
+
+  - type: textarea
+    id: body
+    attributes:
+      label: Epic Details
+      description: Complete each section below.
+      value: |
+        ## Overview
+        <!-- A high-level summary of the epic and its business value. -->
+
+
+        ## Scope
+        <!-- What is in scope and out of scope for this epic? -->
+
+
+        ## Stakeholders
+        <!-- Who are the key stakeholders and owners of this epic? -->
+        | Dept | Name/s |
+        |-------|------|
+        |       |      |
+        |       |      |
+
+    validations:
+      required: true
