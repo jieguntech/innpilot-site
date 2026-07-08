@@ -1,0 +1,40 @@
+name: "Spike 🔍"
+description: Investigation into an approach or problem
+labels: ["spike"]
+body:
+  - type: textarea
+    id: body
+    attributes:
+      label: Spike Details
+      description: Complete each section below.
+      value: |
+        ## Overview
+        <!-- A clear summary of what is being investigated and why. -->
+
+
+        ## Goal
+        <!-- What question are we trying to answer? What does done look like for this spike? -->
+
+
+        ## References
+        <!-- Links to related issues, designs, docs, or external resources. -->
+
+    validations:
+      required: true
+
+  - type: textarea
+    id: investigation-outcome
+    attributes:
+      label: Investigation Outcome
+      description: To be completed at the end of the spike. Summarise findings, decisions made, and any follow-up issues raised.
+      value: |
+        **Findings:**
+        -
+
+        **Decision:**
+
+
+        **Follow-up issues:**
+        -
+    validations:
+      required: false
